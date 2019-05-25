@@ -1,27 +1,11 @@
-floors = 10
-current_floor = 0 # This is just a starting point
-user_floor = 0 # This is just a starting point
+def calculate_interest(balance,interest,days) :
+    """
+    Calculates interest on a given balance. The key arguments are
+    1. Balance  - Amount on which balance needs to be calculated
+    2. Interest - Annual interest in percentage
+    3. Days     - Number of days since the beginning of the year
+    """
+    interest_amount = balance * ( interest / 100 ) * ( days/365 )
+    return interest_amount
 
-user_floor = 6
-
-difference = user_floor - current_floor
-
-if difference < 0 : 
-    current_floor = user_floor
-    print ( " Move down ")
-    
-if difference > 0 : 
-    current_floor = user_floor
-    print ( " Move up ")    
-
-user_floor = 3
-
-difference = user_floor - current_floor
-
-if difference < 0 : 
-    current_floor = user_floor
-    print ( " Move down ")
-    
-elif difference > 0 : 
-    current_floor = user_floor
-    print ( " Move up ")    
+calculate_interest
