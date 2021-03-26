@@ -1,4 +1,4 @@
-sum = 0
+def one ( x : int, y : int) -> int:
+    return x + y
 
-for num in range(10000000) :
-    sum = sum + num
+z = one("ll", "oo")
